@@ -1,10 +1,10 @@
 import React from 'react';
-import { StyleSheet, Text,View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import CircleButton from '../elements/CircleButton';
 
 
 class MemoDetailScreen extends React.Component {
-  render (){
+  render () {
     return (
     <View style={styles.container}>
       <View>
