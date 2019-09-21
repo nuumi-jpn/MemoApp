@@ -8,7 +8,7 @@ class BodyText extends React.Component {
     return (
       <View style= {styles.text}>
         <View style={styles.appbar}>
-        
+
 
         </View>
       </View>
