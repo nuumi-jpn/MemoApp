@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 class MemoList extends React.Component {
-  render(){
+  render() {
     return (
       <View style={styles.memoList}>
         <View style={styles.memoListItem}>

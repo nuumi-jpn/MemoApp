@@ -4,7 +4,7 @@ import { StyleSheet, View } from 'react-native';
 import MemoList from '../components/MemoList';
 import CircleButton from '../elements/CircleButton';
 
-class MemoListScreens extends React.Component {
+class MemoListScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
@@ -22,4 +22,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default MemoListScreens;
+export default MemoListScreen;

@@ -6,7 +6,7 @@ import CircleButton from '../elements/CircleButton';
 class MemoDetailScreen extends React.Component {
   render () {
     return (
-      <View style={styles.container}>
+    <View style={styles.container}>
       <View>
         <View style={styles.memoHeader}>
           <View>
@@ -18,11 +18,12 @@ class MemoDetailScreen extends React.Component {
 
       <View style={styles.memoContent}>
         <Text>
-          講座のアイディアです
+          講座のアイディアです!!
         </Text>
       </View>
 
-        <CircleButton name="pencil" color="white" style={styles.editButton} />
+      <CircleButton name="pencil" color="white" style={styles.editButton} />
+
     </View>
     );
   }
@@ -40,7 +41,6 @@ const styles = StyleSheet.create({
   },
   memoHeaderTitle: {
     fontSize: 28,
-    fontweight: 'bold',
     color: '#FFF',
     marginBottom: 4,
   },

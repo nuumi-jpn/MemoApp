@@ -1,12 +1,13 @@
-import * as React from 'react';
+import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import * as Font from 'expo-font';
-import { createIconSet } from '@expo/vector-icons'
+import { createIconSet } from '@expo/vector-icons';
 import fontAwesome from '../../assets/fonts/fa-solid-900.ttf';
 
 const CustomIcon = createIconSet({
   pencil: '\uf303',
-  plus: '\uf067',
+  plus: '\uf004',
+  check: '\uf00c'
 }, 'FontAwesome');
 
 class CircleButton extends React.Component {
@@ -39,7 +40,7 @@ class CircleButton extends React.Component {
           <CustomIcon name={name} style={[styles.CircleButtonTitle, { color: textColor }]} />
         ) : null
       }
-    </View>
+      </View>
     );
   }
 }
@@ -54,16 +55,9 @@ const styles = StyleSheet.create({
     borderRadius: 24,
     justifyContent: 'center',
     alignItems: 'center',
-    shadowCollor: '#FFF',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
-    shadowRadius: 0,
   },
   CircleButtonTitle: {
-    fontFamily: 'FontAwesome',
-    fontweight: 30,
     fontSize: 32,
-    color: '#FFF',
     lineHeight: 32,
   },
 });
