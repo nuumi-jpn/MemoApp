@@ -1,13 +1,15 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
 import * as Font from 'expo-font';
+import { StyleSheet, View } from 'react-native';
+
+
 import { createIconSet } from '@expo/vector-icons';
-import fontAwesome from '../../assets/fonts/fa-solid-900.ttf';
+import fontAwsome from '../../assets/fonts/fa-solid-900.ttf';
 
 const CustomIcon = createIconSet({
   pencil: '\uf303',
   plus: '\uf004',
-  check: '\uf00c'
+  check: '\uf00c',
 }, 'FontAwesome');
 
 class CircleButton extends React.Component {
@@ -17,7 +19,7 @@ class CircleButton extends React.Component {
 
   async componentDidMount() {
     await Font.loadAsync({
-      FontAwesome: fontAwesome,
+      FontAwesome: fontAwsome,
     });
     this.setState({ fontLoaded: true });
   }
@@ -29,7 +31,7 @@ class CircleButton extends React.Component {
     let textColor = '#FFF';
 
     if (color === 'white') {
-      bgColor = '#b0c4de';
+      bgColor = '#FFF';
       textColor = '#E31676';
     }
 

@@ -1,16 +1,16 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import CustomIcon from '../elements/CircleButton';
+import { StyleSheet, View, TextInput } from 'react-native';
+import CircleButton from '../elements/CircleButton';
 
 class MemoEditScreen extends React.Component {
    render() {
      return (
        <View style={styles.container}>
-         <View style={styles.memoEditInput}>
-          <Text>Hi!</Text>
-        </View>
-         <CustomIcon name={check} style={[styles.CircleButtonTitle, { color: textColor }]} />
-       </View>
+         <TextInput style={styles.memoEditInput} multiline value="HI!" />
+         <CircleButton>
+           {'\uf00c'}
+         </CircleButton>
+      </View>
     );
   }
 }
