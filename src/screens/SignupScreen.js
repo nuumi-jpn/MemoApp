@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text ,View, TextInput, TouchableHighlight } from 'react-native';
 
-class SingupScreen extends React.Component {
+class SignupScreen extends React.Component {
    render() {
      return (
       <View style={styles.container}>
@@ -55,4 +55,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default SingupScreen;
+export default SignupScreen;

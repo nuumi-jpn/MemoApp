@@ -1,34 +1,31 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TouchableHighlight } from 'react-native';
 
 class MemoList extends React.Component {
   render() {
     return (
       <View style={styles.memoList}>
-        <View style={styles.memoListItem}>
-          <Text style={styles.memoTitle}>講座のアイテム</Text>
-          <Text style={styles.memoData}>2019/09/17</Text>
-        </View>
+        <TouchableHighlight onPress={() => {this.props.navigation.navigate('MemoDetail'); }}>
+          <View style={styles.memoListItem}>
+            <Text style={styles.memoTitle}>講座のアイテム</Text>
+            <Text style={styles.memoData}>2019/09/17</Text>
+          </View>
+        </TouchableHighlight>
 
-        <View style={styles.memoListItem}>
-          <Text style={styles.memoTitle}>講座のアイテム</Text>
-          <Text style={styles.memoData}>2019/09/17</Text>
-        </View>
+        <TouchableHighlight onPress={() => {this.props.navigation.navigate('MemoDetail'); }}>
+          <View style={styles.memoListItem}>
+            <Text style={styles.memoTitle}>講座のアイテム</Text>
+            <Text style={styles.memoData}>2019/09/17</Text>
+          </View>
+        </TouchableHighlight>
 
-        <View style={styles.memoListItem}>
-          <Text style={styles.memoTitle}>講座のアイテム</Text>
-          <Text style={styles.memoData}>2019/09/17</Text>
-        </View>
+        <TouchableHighlight onPress={() => {this.props.navigation.navigate('MemoDetail'); }}>
+          <View style={styles.memoListItem}>
+            <Text style={styles.memoTitle}>講座のアイテム</Text>
+            <Text style={styles.memoData}>2019/09/17</Text>
+          </View>
+        </TouchableHighlight>
 
-        <View style={styles.memoListItem}>
-          <Text style={styles.memoTitle}>講座のアイテム</Text>
-          <Text style={styles.memoData}>2019/09/17</Text>
-        </View>
-
-        <View style={styles.memoListItem}>
-          <Text style={styles.memoTitle}>講座のアイテム</Text>
-          <Text style={styles.memoData}>2019/09/17</Text>
-        </View>
       </View>
   );
   }
@@ -46,7 +43,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF',
   },
   memoTitle: {
-    fontsize: 18,
+    fontSize: 18,
     marginBottom: 4,
   },
   memoData: {
