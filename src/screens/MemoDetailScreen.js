@@ -38,11 +38,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   memoHeaderTitle: {
+    paddingLeft: 10,
     fontSize: 28,
     color: '#FFF',
     marginBottom: 4,
   },
   memoHeaderDate: {
+    paddingLeft: 10,
     fontSize: 12,
     color: '#FFF',
   },
