@@ -13,7 +13,7 @@ class MemoCreateScreen extends React.Component {
     const { currentUser } = firebase.auth();
     db.collection(`users/${currentUser.uid}/memos`).add({
       body: this.state.body,
-      createOn: new Date(),
+      createdOn: new Date(),
     })
       .then((docRef) => {
         console.log(docRef.id)
@@ -30,6 +30,7 @@ class MemoCreateScreen extends React.Component {
           style={styles.memoCreateInput}
           multiline
           value={this.state.body}
+          returnKeyType="done"
           onChangeText={(text) => { this.setState({ body: text }); }}
         />
         <CircleButton
